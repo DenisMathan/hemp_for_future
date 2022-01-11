@@ -1,0 +1,1089 @@
+/*@import url(futuralt);*/
+.spinner{
+    position: absolute;
+    background-color: #6cad68;
+    left: 50%;
+    top: 50%;
+    margin: -75px 0 0 -75px;
+    border: 16px solid #6cad68;
+    border-radius: 50%;
+    border-top: 16px solid  rgb(108,173, 104);
+    z-index: 100000;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 3s linear infinite;
+    animation: spin 3s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#overlay{
+    height:100%;
+    width:100%;
+    background-color: #6cad68;
+    position:fixed;
+    z-index: 1000000;
+    left:0;
+    top:0;
+}
+
+
+body{
+    background-color: green;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+
+}
+
+.hintergrundBild{
+    position:relative;
+    height: 600vh;
+    width:100vw;
+
+
+}
+.unsichtbar{
+    opacity:0;
+}
+.textButton{
+    background-color: red;
+    opacity:0;
+
+    pointer-events: visible;
+    position:absolute;
+    height:10vh;
+    width:20%;
+}
+#hierClick{
+    bottom:78vh;
+    left: 73.5%;
+}
+#unsClick{
+    bottom:2.5vh;
+    left: 79.7%;
+    width:5%;
+    height:3vh;
+}
+#datenschutzClick{
+    bottom:2.5vh;
+    left: 85.2%;
+    width:6%;
+    height:3vh;
+}
+#impressumClick{
+    bottom:2.5vh;
+    left: 91.8%;
+    width:6%;
+    height:3vh;
+}
+
+#antikeClick{
+    bottom: 154vh;
+    left:8.5%;
+    width:15%;
+}
+#muskelaufbauClick{
+    bottom: 124vh;
+    left:27%;
+    width:21%;
+}
+#proteinquelleClick{
+    bottom:179vh;
+    left: 64%;
+}
+#kuecheClick{
+    bottom:105vh;
+    left:68%;
+    width:12%;
+}
+#gutenberbibelClick{
+    bottom:206.5vh;
+    left:7%;
+    width:23%;
+}
+#holzClick{
+    bottom:204.5vh;
+    left:67%;
+    width:17%;
+}
+#umweltClick{
+    bottom:274.5vh;
+    left:60%;
+    width:20%;
+}
+
+#autoClick{
+    bottom:307.5vh;
+    left:16%;
+    width:24%;
+}
+#daemmungClick{
+    bottom:343.5vh;
+    left:50%;
+    width:12%;
+}
+#plastikClick{
+    bottom:307.5vh;
+    left: 82%;
+    width:13%;
+}
+#apothekenpflichtClick{
+    bottom:467.5vh;
+    left:14%;
+    width:17.5%;
+}
+#anwendungClick{
+    bottom:441vh;
+    left:47%;
+    width:14%;
+}
+#forschungClick{
+    bottom:404vh;
+    left:74%;
+    width:15%;
+}
+#konsumClick{
+    bottom:564vh;
+    left:43%;
+    width:14%;
+}
+#marihuanaClick{
+    bottom:508.5vh;
+    left:55%;
+    width:16%;
+}
+#haschischClick{
+    bottom:584vh;
+    left:84%;
+    width:14%;
+}
+
+#testzahl{
+    position: absolute;
+    color: black;
+    top: 50%;
+    left: 50%;
+}
+
+.boden{
+    opacity:1;
+    position: absolute;
+    background-color: saddlebrown;
+    width: 100%;
+    height:100%;
+    bottom: 0;
+}
+
+.Titel{
+    margin-top: 7%;
+}
+.rahmen{
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    top:0;
+    margin: auto;
+    background-color: #6cad68;
+    overflow: hidden;
+}
+.intro{
+    position:absolute;
+}
+.infotextb{
+    position:absolute;
+    color:white;
+    text-align: justify;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.8vw;
+    background-color: #6cad68;
+    opacity:0;
+
+}
+.infotext{
+    position:absolute;
+    color:white;
+    opacity:0;
+    text-align: justify;
+    font-family: 'Quicksand', sans-serif;
+    font-size:0.8vw;
+
+}
+
+.hierKlickenText{
+
+    bottom:78.5vh;
+    left:76%;
+    width:15vw;
+}
+
+.antikeText{
+    bottom:148.6vh;
+    left:7%;
+    width:  18vw
+}
+
+.muskelaufbauText{
+    bottom:123.6vh;
+    left:27.5%;
+    width:19vw;
+
+}
+.kuecheText{
+    bottom: 105vh;
+    left:65%;
+    width:30vw;
+}
+.proteinquelleText{
+    bottom: 177vh;
+    left:61%;
+    width:30vw;
+}
+.gutenbergBibelText{
+    bottom: 207vh;
+    left:4%;
+    width:30vw;
+}
+.umweltText{
+    bottom: 275vh;
+    left: 59%;
+    width:23vw;
+}
+.holzVglText{
+    bottom: 204vh;
+    left: 61%;
+    width:33vw;
+}
+.hanfautoText{
+    bottom: 303vh;
+    left: 7%;
+    width:33vw;
+}
+.daemmungText{
+    bottom: 342vh;
+    left: 45.5%;
+    width:16.8vw;
+}
+.plastikText{
+    bottom: 306vh;
+    left: 77%;
+    width:20vw;
+}
+.medizinText{
+    bottom: 469vh;
+    left: 14%;
+    width: 18vw;
+}
+.anwendungText{
+    bottom: 436vh;
+    left: 47%;
+    width: 15vw;
+}
+.forschungText{
+    bottom: 404vh;
+    left:  68%;
+    width: 27vw;
+}
+
+.konsumText{
+    bottom: 557vh;
+    left:  33%;
+    width: 35vw;
+}
+.marihuanaText{
+    bottom: 508vh;
+    left:  53%;
+    width: 20vw;
+}
+.haschischText{
+    top: 2vh;
+    right:  2.6%;
+    width: 10vw;
+}
+
+
+.collage{
+    position: absolute;
+
+}
+
+.ueberschrift{
+    position: absolute;
+
+
+}
+/*Seite1*/
+#titel{
+    top:0vh;
+    height:80vh;
+    left:17%;
+}
+#s11{
+    bottom:79vh;
+    left:14.5%;
+    opacity:0;
+}
+#s12{
+    bottom:5.5vh;
+    left:52%;
+    opacity:0;
+}
+#hierKlickenSchrift{
+
+    bottom: 81vh;
+    left:76%;
+    height:4vh;
+    width:13.1%;
+}
+#scrollIcon{
+    height:8.5vh;
+    width:4.5%;
+    bottom:2vh;
+    left: 47%;
+}
+#datenschutz{
+    bottom:3vh;
+    left:85.5%;
+    width:5.5%;
+    height:2vh;
+}
+#impressum{
+    bottom:3vh;
+    left:92%;
+    width:5.5%;
+    height:2vh;
+}
+#uns{
+    bottom:3vh;
+    left:80%;
+    width:4.4%;
+    height:2vh;
+}
+#probiere{
+    opacity:1;
+    bottom: 85vh;
+    left:20%;
+    height:4vh;
+    width:17%;
+}
+#pfeil{
+    opacity:1;
+    bottom: 75vh;
+    height:6vh;
+    width:4.5%;
+    left:23%;
+}
+
+/*Seite2 links*/
+#lebensmittelÜ{
+    bottom:171vh;
+    height:23vh;
+    //width:22vw;
+    left:3%;
+}
+#hanfSamen{
+    width: 7vw;
+    height: 8vh;
+    //box-shadow: 3px 3px 1px #176421;
+    left: 22%;
+    bottom:138vh;
+    -webkit-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+
+}
+#antikeSchrift{
+    bottom:155vh;
+    height:8vh;
+    width: 12vw;
+    left:10%;
+}
+#zs2l{
+    bottom:107vh;
+    height:40vh;
+    width: 23.5vw;
+    left:3%;
+}
+#samenDrei{
+    bottom:128vh;
+    height:10vh;
+    width: 6.5vw;
+    left:7%;
+}
+#historyP{
+    bottom:103vh;
+    height:15vh;
+    width: 10vw;
+    left:3%;
+    -webkit-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+}
+
+#hanfSamen2{
+    bottom:109vh;
+    height:24vh;
+    width: 15.5vw;
+    left:13%;
+}
+#muskelaufbauSchrift{
+    bottom: 127vh;
+    width:20%;
+    height:5vh;
+    left:27.7%;
+}
+
+/*rechts*/
+#proteinquelleSchrift{
+    bottom:180vh;
+    height:6vh;
+    width: 16vw;
+    left:66%;
+}
+#zs2r{
+    bottom:130vh;
+    height:36vh;
+    width: 20vw;
+    left:68%;
+}
+#finishWar{
+    bottom:157vh;
+    height:14vh;
+    width: 23vw;
+    left:67%;
+    -webkit-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    transform: rotate(10deg);
+}
+#hanfoelSeitenbacher{
+    bottom:140vh;
+    height:35vh;
+    width: 4.8vw;
+    left:85%;
+    -webkit-transform: rotate(15deg);
+    -ms-transform: rotate(15deg);
+    transform: rotate(15deg);
+}
+#proteinPulver{
+    bottom:121vh;
+    height:31vh;
+    width: 10vw;
+    left:70%;
+    -webkit-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+}
+#ritterSport{
+    bottom:120vh;
+    height:25vh;
+    width: 15vw;
+    left:80%;
+    -webkit-transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+}
+
+#turn{
+    bottom:125vh;
+    height:35vh;
+    width: 14vw;
+    left:76%;
+    -webkit-transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+
+}
+#kuecheSchrift{
+    bottom:107vh;
+    height:6vh;
+    width: 10vw;
+    left:69%;
+}
+
+/*Seite3*/
+/*links*/
+
+
+#papierÜ{
+    bottom:280vh;
+    height:13vh;
+    width: 15vw;
+    left:4.5%;
+}
+#zs3l{
+    bottom:226vh;
+    height:46vh;
+    width: 11vw;
+    left:5%;
+    -webkit-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    transform: rotate(10deg);
+}
+#kleinePflanze1{
+    bottom:248.5vh;
+    height:25vh;
+    width: 10vw;
+    left:10%;
+}
+#kleinePflanze2{
+    bottom:237.5vh;
+    height:25vh;
+    width: 8vw;
+    left:19%;
+    -webkit-transform: rotate(21deg);
+    -ms-transform: rotate(21deg);
+    transform: rotate(21deg);
+}
+#kleinePflanze3{
+    bottom:247vh;
+    height:25vh;
+    width: 7vw;
+    left:16%;
+}
+#theatre{
+    bottom:215vh;
+    height:32vh;
+    width: 6vw;
+    left:14%;
+    -webkit-transform: rotate(85deg);
+    -ms-transform: rotate(85deg);
+    transform: rotate(85deg);
+}
+#bibelBild{
+    bottom:225vh;
+    height:27vh;
+    width: 8vw;
+    left:5%;
+    -webkit-transform: rotate(-15deg);
+    -ms-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+}
+
+#schnur{
+    bottom:225vh;
+    height:35vh;
+    width:18vw;
+    left:5%;
+
+}
+#gutenbergbibelSchrift{
+    bottom:207.5vh;
+    height:8vh;
+    width: 22vw;
+    left:7.5%;
+}
+
+/*rechts*/
+
+#umweltSchrift{
+    bottom:275vh;
+    height:8vh;
+    width: 18vw;
+    left:61%;
+}
+#zs3r{
+    bottom:218vh;
+    height:47vh;
+    width: 23.5vw;
+    left:67%;
+}
+#samFights{
+    bottom:255vh;
+    height:13vh;
+    width: 31vw;
+    left:62%;
+}
+#kreis{
+    bottom:227vh;
+    height:24vh;
+    width: 12vw;
+    left:80%;
+}
+#arbeit{
+    bottom:221vh;
+    height:33vh;
+    width: 22vw;
+    left:68%;
+}
+#papier{
+    bottom:217vh;
+    height:25vh;
+    width: 14vw;
+    left:70%;
+}
+#maria{
+    bottom:219vh;
+    height:22vh;
+    width: 7vw;
+    left:80%;
+    -webkit-transform: rotate(4deg);
+    -ms-transform: rotate(4deg);
+    transform: rotate(4deg);
+}
+#holzSchrift{
+    bottom:207.5vh;
+    height:3.7vh;
+    width: 15vw;
+    left:68%;
+}
+
+/*Seite 4*/
+/*links*/
+#kunstStoffeÜ{
+    bottom:377vh;
+    height:14vh;
+    width: 20vw;
+    left:4%;
+}
+#zs4l{
+    bottom:324vh;
+    height:45vh;
+    width: 28vw;
+    left:4%;
+}
+#sandalen{
+    bottom:352vh;
+    height:23vh;
+    width: 10.5vw;
+    left:24%;
+}
+#fordAuto{
+    bottom:322vh;
+    height:39vh;
+    width: 24vw;
+    left:10%;
+}
+#logo{
+    bottom:322vh;
+    height:10vh;
+    width: 11vw;
+    left:30%;
+}
+#autoSchrift{
+    bottom:309vh;
+    height:6vh;
+    width: 22vw;
+    left:17%;
+}
+
+/*rechts*/
+#zs4r{
+    bottom:346vh;
+    height:30vh;
+    width: 25vw;
+    left:67%;
+}
+#editorial{
+    bottom:370vh;
+    height:12vh;
+    width: 13vw;
+    left:66%;
+    -webkit-transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+}
+#drugStore{
+    bottom:370vh;
+    height:22vh;
+    width: 15vw;
+    left:80.5%;
+    -webkit-transform: rotate(6deg);
+    -ms-transform: rotate(6deg);
+    transform: rotate(6deg);
+}
+#daemmungBild{
+    bottom:352vh;
+    height:23vh;
+    width: 15vw;
+    left:61.5%;
+}
+#klotz{
+    bottom:339vh;
+    height:30vh;
+    width: 22vw;
+    left:75.5%;
+}
+#daemmungSchrift{
+    bottom:346vh;
+    height:5vh;
+    width: 11vw;
+    left:50.5%;
+}
+#plastikSchrift{
+    bottom:310vh;
+    height:5vh;
+    width: 11vw;
+    left:83%;
+}
+/*Seite5 links*/
+#medizinÜ{
+    bottom:480vh;
+    height:15vh;
+    width: 15vw;
+    left:4%;
+}
+#apothekenpflichtSchrift{
+    bottom:470vh;
+    height:6vh;
+    width: 16vw;
+    left:15%;
+}
+
+#zs5l{
+    bottom:426vh;
+    height:33vh;
+    width: 12vw;
+    left:7%;
+}
+#zs5lb{
+    bottom:426vh;
+    height:33vh;
+    width: 15vw;
+    left:10.5%;
+    -webkit-transform: rotate(5deg);
+    -ms-transform: rotate(5deg);
+    transform: rotate(5deg);
+}
+#apothekenLogo{
+    bottom:440vh;
+    height:26vh;
+    width: 13vw;
+    left: 2%;
+
+}
+#chemie{
+    bottom:440vh;
+    height:26vh;
+    width: 23vw;
+    left:15%;
+}
+#china{
+    bottom:411.5vh;
+    height:20vh;
+    width: 5vw;
+    left:6%;
+}
+#drPoppy{
+    bottom:410vh;
+    height:30vh;
+    width: 11vw;
+    left:17%;
+    -webkit-transform: rotate(5deg);
+    -ms-transform: rotate(5deg);
+    transform: rotate(5deg);
+}
+
+/*rechts*/
+#zs5r {
+    bottom: 463vh;
+    height: 17vh;
+    width: 20.3vw;
+    left: 67%;
+}
+#zs5rb{
+    bottom: 450vh;
+    height: 24vh;
+    width: 19vw;
+    left: 68%;
+}
+#medicalUse{
+    bottom: 469vh;
+    height: 18vh;
+    width: 10vw;
+    left: 65%;
+}
+#atlas{
+    bottom: 445vh;
+    height: 22vh;
+    left: 83%;
+    -webkit-transform: rotate(8deg);
+    -ms-transform: rotate(8deg);
+    transform:rotate(8deg);
+}
+#hanfMan{
+    bottom: 445vh;
+    height: 23vh;
+    width: 17vw;
+    left: 59%;
+    -webkit-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    transform: rotate(10deg);
+}
+#kapsel{
+    bottom: 460vh;
+    height: 15vh;
+    width: 11vw;
+    left: 73%;
+}
+#anwendungSchrift{
+    bottom: 442vh;
+    height: 8vh;
+    width: 12vw;
+    left:  48%;
+}
+#forschungSchrift{
+    bottom: 405vh;
+    height: 8vh;
+    width: 13vw;
+    left: 75%;
+}
+
+/*seite6 links*/
+#rauschmittelÜ{
+    bottom:587vh;
+    height:8vh;
+    width: 23vw;
+    left:50%;
+    transform: translateX(-50%);
+}
+#murder{
+    bottom:557vh;
+    height:40vh;
+    width: 17vw;
+    left:9%;
+}
+#rootsInHell{
+    bottom:529vh;
+    height:40vh;
+    width: 14vw;
+    left:16%;
+}
+#coffeeShopL{
+    bottom:507vh;
+    height:40vh;
+    width: 19vw;
+    left:10%;
+}
+#bong{
+    bottom:507vh;
+    height:50vh;
+    width: 21vw;
+    left:4%;
+}
+#devilsHarvest{
+    bottom:533vh;
+    height:40vh;
+    width: 15vw;
+    left:0%;
+}
+#eck{
+    bottom:570vh;
+    height:30vh;
+    width: 24.5vw;
+    left:-4%;
+}
+#haschischSchrift{
+    bottom:586vh;
+    height:6vh;
+    width: 12vw;
+    left:85%;
+}
+/*rechts*/
+#redDevil{
+    bottom:537vh;
+    height:40vh;
+    width: 14vw;
+    right:0%;
+}
+#reeferMadness{
+    bottom:557vh;
+    height:40vh;
+    width: 13.1vw;
+    right:14%;
+}
+#comic{
+    bottom:522vh;
+    height:40vh;
+    width: 15vw;
+    right:6%;
+}
+#coffeeShopR{
+    bottom:498.75vh;
+    height:40vh;
+    width: 20vw;
+    right:-1.4%;
+}
+#forTwenty{
+    bottom:500vh;
+    height:30vh;
+    width: 15vw;
+    right:10%;
+}
+#bud{
+    bottom:527vh;
+    height:35vh;
+    width: 13.5vw;
+    right:18%;
+}
+#joint{
+    bottom:512vh;
+    height:30vh;
+    width: 18vw;
+    right: 21%;
+}
+#marihuanaSchrift{
+    bottom:511vh;
+    height:5vh;
+    width: 14vw;
+    right:30%;
+}
+#konsumSchrift{
+    bottom:565vh;
+    height:7vh;
+    width:  12.5vw;
+    left:44%;
+}
+/*.collage:hover{
+    opacity: 1;
+    width: auto;
+    height: 25vh;
+    box-shadow: 10px 10px 5px #176421;
+    transition-duration: 1s;
+}*/
+
+
+
+.Blatt{
+    position: absolute;
+    z-index: 120;
+
+}
+
+#blatt1{
+    bottom:-49vh;
+    height:40vh;
+    width: 19.5%;
+    left:5%;
+}
+#blatt2{
+
+    bottom: 150vh;
+    height: 55vh;
+    width:40vw;
+    left: 45.8%;
+}
+#blatt3{
+
+    bottom:328vh;
+    height:75vh;
+    width: 54vw;
+    left:43%;
+}
+#blatt4{
+    bottom: 492vh;
+    height: 50vh;
+    width: 39.9vw;
+    left:6%;
+}
+#blatt5{
+    bottom: 729vh;
+    height: 70vh;
+    width: 35vw;
+    left:10.7%;
+}
+
+.onclick{
+    position: absolute;
+    width: 2vw;
+    height: 8vh;
+    z-index: 121;
+    opacity: 0;
+    background-color: red;
+}
+#onclick1{
+    bottom:-31vh;
+    left:21%;
+}
+#onclick2{
+    bottom: 185.5vh;
+    left:47%;
+}
+
+#onclick3{
+    bottom:374vh;
+    left:45%;
+}
+#onclick4{
+    bottom:527vh;
+    left:43.5%;
+}
+#onclick5{
+    bottom:732vh;
+    left:43%;
+}
+
+.onclick:hover{
+    cursor: url('Bilder/schereAuf1.png'), auto;
+}
+.onclick:active:hover{
+    cursor: url('Bilder/schereZu1.png'), auto;
+}
+.textButton:hover{
+    cursor:url('Bilder/HanfMaus.png'), auto;
+}
+
+.Stamm{
+    position: absolute;
+    z-index:110;
+    width: 75%;
+    height: 1100vh;
+    bottom:-106.5vh;
+    left:50%;
+    transform: translateX(-50%);
+
+
+
+
+
+}
+
+.Pflanze{
+    position: absolute;
+    opacity: 1;
+    width: 100vw;
+    max-height: 600vh;
+
+
+
+}
+.colRahmen{
+    position: absolute;
+    width: 100vw;
+    height: 600vh;
+    background-color: transparent;
+    bottom:0vh;
+
+}
+
+.colRahmen2{
+    pointer-events: none;
+}
+
+
+
+.AudioIcon{
+    position:fixed;
+    top: 3%;
+    left: 2%;
+    height: 4vh;
+
+}
+.On{
+    opacity: 0;
+}
+.Off{
+    opacity: 1;
+}
+
+
+
+

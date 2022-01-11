@@ -1,0 +1,455 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Hemp for Future</title>
+    <script src="howler.core.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+
+    <link rel="stylesheet" href="Weedo.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+</head>
+<body onload="soundPflanze.play(); ">
+
+<div id="overlay">
+    <div class="spinner">
+        <img src="Bilder/seite1b/blatt.png" class="spinner"/>
+    </div>
+</div>
+
+<div style="height:40vh;"></div>
+
+<div class="rahmen">
+
+    <div class="colRahmen">
+        <img src="Bilder/pflanz/hintergrund61.png" class="hintergrundBild"/>
+        <!--Seite 1-->
+
+        <img src="Bilder/Seite1/Hier Klicken.png" class="intro" id="hierKlickenSchrift"/>
+        <img src="Bilder/Seite1/Scroll Icon.png" class="intro" id="scrollIcon"/>
+
+        <img src="Bilder/seite1b/Datenschutz.png" class="intro" id="datenschutz"/>
+        <img src="Bilder/seite1b/Pfeil Homepage.png" class="intro" id="pfeil">
+        <img src="Bilder/seite1b/Impressum.png" class="intro" id="impressum"/>
+        <img src="Bilder/seite1b/Über Uns.png" class="intro" id="uns"/>
+
+        <img src="Bilder/seite1b/ProbiereEsHier.png" class="intro" id="probiere"/>
+        <div class="infotext" id="s11">Nutze am besten Chrome und einen Laptop,<br>
+            wenn du unsere Website genießen willst!
+        </div>
+        <div class="infotext" id="s12">Scrolle runter um hochzukommen!</div>
+
+
+        <!--Seite 2-->
+        <!--links-->
+        <!--<img src="Bilder/gans.png" class="Stamm unsichtbar ">-->
+        <img src="Bilder/Seite2/links/titel-lebensmittel.png" class="ueberschrift  " id="lebensmittelÜ"/>
+        <img src="Bilder/Seite2/links/antike.png" class="ueberschrift schriftl1 " id="antikeSchrift"/>
+        <img src="Bilder/Seite2/links/NPS2.png" class="collage zeitung1l" id="zs2l"/>
+        <img src="Bilder/Seite2/links/hanfsamen-viel.png" class="collage bild1 " id="hanfSamen"/>
+        <img src="Bilder/Seite2/links/samenDrei.png" class="collage bild1 " id="samenDrei"/>
+        <img src="Bilder/Seite2/links/HistoryC.png" class="collage  zeitung1l" id="historyP"/>
+        <img src="Bilder/Seite2/links/samen.png" class="collage bild1" id="hanfSamen2"/>
+        <img src="Bilder/Seite2/links/muskelaufbau.png" class="ueberschrift schriftl1" id="muskelaufbauSchrift"/>
+
+
+        <!--rechts-->
+        <img src="Bilder/Seite2/rechts/proteinquelle.png" class="ueberschrift schriftr1" id="proteinquelleSchrift"/>
+        <img src="Bilder/Seite2/rechts/NP4.png" class="collage zeitung1r " id="zs2r"/>
+        <img src="Bilder/Seite2/rechts/C9.png" class="collage  zeitung1r" id="finishWar"/>
+        <img src="Bilder/Seite2/rechts/hanfölseitenbacher.png" class="collage bild1" id="hanfoelSeitenbacher"/>
+        <img src="Bilder/Seite2/rechts/pulver.png" class="collage bild1" id="proteinPulver"/>
+        <img src="Bilder/Seite2/rechts/schoko_gras3.png" class="collage bild1" id="ritterSport"/>
+        <img src="Bilder/Seite2/rechts/turn2.png" class="collage bild1" id="turn"/>
+        <img src="Bilder/Seite2/rechts/hanfoel_2.png" class="collage schriftr1" id="kuecheSchrift"/>
+
+        <!--Seite 3-->
+        <!--links-->
+        <img src="Bilder/Seite3/links/titel-papier.png" class="collage col1" id="papierÜ"/>
+        <img src="Bilder/Seite3/links/NPlinks_3.png" class="collage col1" id="zs3l"/>
+        <img src="Bilder/Seite3/links/KleinePflanze1_3.png" class="collage col1" id="kleinePflanze1"/>
+        <img src="Bilder/Seite3/links/KleinePflanze2_3.png" class="collage col1" id="kleinePflanze2"/>
+        <img src="Bilder/Seite3/links/KleinePflanze3_3.png" class="collage col1" id="kleinePflanze3"/>
+        <img src="Bilder/Seite3/links/FlyerS3.png" class="collage col1" id="theatre"/>
+        <img src="Bilder/Seite3/links/bibel2.png" class="collage col1" id="bibelBild"/>
+        <img src="Bilder/Seite3/links/faden.png" class="collage col1" id="schnur"/>
+        <img src="Bilder/Seite3/links/Die Bibel.png" class="collage schriftl2" id="gutenbergbibelSchrift"/>
+
+        <!--rechts-->
+        <img src="Bilder/Seite3/rechts/Alternative.png" class="collage schriftr2" id="umweltSchrift"/>
+        <img src="Bilder/Seite3/rechts/NP1.png" class="collage col1" id="zs3r"/>
+        <img src="Bilder/Seite3/rechts/NPRechts_3.png" class="collage col1" id="samFights"/>
+        <img src="Bilder/Seite3/rechts/Kreis_3.png" class="collage col1" id="kreis"/>
+        <img src="Bilder/Seite3/rechts/hempmachine.png" class="collage col1" id="arbeit"/>
+        <img src="Bilder/Seite3/rechts/pappe.png" class="collage col1" id="papier"/>
+        <img src="Bilder/Seite3/rechts/Maria.png" class="collage col1" id="maria"/>
+        <img src="Bilder/Seite3/rechts/Hanf vs. Holz.png" class="collage schriftr2" id="holzSchrift"/>
+
+        <!--Seite4-->
+        <!--links-->
+        <img src="Bilder/Seite4/links/Kunststoff.png" class="collage col1" id="kunstStoffeÜ"/>
+        <img src="Bilder/Seite4/links/NP8.png" class="collage col1" id="zs4l"/>
+        <img src="Bilder/Seite4/links/sandalen.png" class="collage col1" id="sandalen"/>
+        <img src="Bilder/Seite4/links/auto.png" class="collage col1" id="fordAuto"/>
+        <img src="Bilder/Seite4/links/ford-logo.png" class="collage col1" id="logo"/>
+        <img src="Bilder/Seite4/links/hanfauto.png" class="collage schriftl3" id="autoSchrift"/>
+
+        <!--rechts-->
+        <img src="Bilder/Seite4/rechts/NP6.png" class="collage col1" id="zs4r"/>
+        <img src="Bilder/Seite4/rechts/NP7.png" class="collage col1" id="editorial"/>
+        <img src="Bilder/Seite4/rechts/Drug Store.png" class="collage col1" id="drugStore"/>
+        <img src="Bilder/Seite4/rechts/daemmung.png" class="collage col1" id="daemmungBild"/>
+        <img src="Bilder/Seite4/rechts/baustoff.png" class="collage col1" id="klotz"/>
+        <img src="Bilder/Seite4/rechts/text-daemmung.png" class="collage schriftr3" id="daemmungSchrift"/>
+        <img src="Bilder/Seite4/rechts/plastik.png" class="collage schriftr3" id="plastikSchrift"/>
+
+        <!--Seite5-->
+        <!--links-->
+        <img src="Bilder/Seite5/links/Medizin_L5.png" class="collage col1" id="medizinÜ"/>
+        <img src="Bilder/Seite5/links/apotheke.png" class="collage col1 schriftl4" id="apothekenpflichtSchrift"/>
+        <img src="Bilder/Seite5/links/NP4_L5.png" class="collage col1" id="zs5l"/>
+        <img src="Bilder/Seite5/links/NP3_L5.png" class="collage col1" id="zs5lb"/>
+        <img src="Bilder/Seite5/links/Apotheke_L5.png" class="collage col1" id="apothekenLogo"/>
+        <img src="Bilder/Seite5/links/Element_L5.png" class="collage col1" id="chemie"/>
+        <img src="Bilder/Seite5/links/China_L5.png" class="collage col1" id="china"/>
+        <img src="Bilder/Seite5/links/elixir.png" class="collage col1" id="drPoppy"/>
+
+        <!--rechts-->
+        <img src="Bilder/Seite5/rechts/np1_R5.png" class="collage col1" id="zs5r"/>
+        <img src="Bilder/Seite5/rechts/NP2_R5.png" class="collage col1" id="zs5rb"/>
+        <img src="Bilder/Seite5/rechts/Medical Only_R5.png" class="collage col1" id="medicalUse"/>
+        <img src="Bilder/Seite5/rechts/RedCross_R5.png" class="collage col1" id="atlas">
+        <img src="Bilder/Seite5/rechts/HanfMan_R5.png" class="collage col1" id="hanfMan"/>
+        <img src="Bilder/Seite5/rechts/pille.png" class="collage col1" id="kapsel"/>
+        <img src="Bilder/Seite5/rechts/Forschung.png" class="collage schriftr4" id="forschungSchrift"/>
+        <img src="Bilder/Seite5/rechts/Anwendung.png" class="collage schriftr4" id="anwendungSchrift"/>
+
+        <!--Seite6-->
+        <!--links-->
+        <img src="Bilder/Seite6/Links/Rauschmittel.png" class="collage col1" id="rauschmittelÜ"/>
+        <img src="Bilder/Seite6/Links/P3_L6.png" class="collage col1" id="murder"/>
+        <img src="Bilder/Seite6/Links/P5_L6.png" class="collage col1" id="eck"/>
+        <img src="Bilder/Seite6/Links/P4_L6.png" class="collage col1" id="rootsInHell"/>
+        <img src="Bilder/Seite6/Links/Coffeeshop_L6.png" class="collage col1" id="coffeeShopL"/>
+        <img src="Bilder/Seite6/Links/P6_L6.png" class="collage col1" id="devilsHarvest"/>
+        <img src="Bilder/Seite6/Links/Bong.png" class="collage col1" id="bong"/>
+        <img src="Bilder/Seite6/Links/Haschisch.png" class="collage " id="haschischSchrift"/>
+
+        <!--rechts-->
+        <img src="Bilder/Seite6/Links/P2_L6.png" class="collage col1" id="redDevil"/>
+        <img src="Bilder/Seite6/Rechts/P1_R6.png" class="collage col1" id="reeferMadness"/>
+        <img src="Bilder/Seite6/Rechts/P7_R6.png" class="collage col1" id="comic"/>
+        <img src="Bilder/Seite6/Rechts/Coffeeshop_R6.png" class="collage col1" id="coffeeShopR"/>
+        <img src="Bilder/Seite6/Rechts/Uhr_R6.png" class="collage col1" id="forTwenty"/>
+        <img src="Bilder/Seite6/Rechts/Bud.png" class="collage col1" id="bud"/>
+        <img src="Bilder/Seite6/Links/Joint_L6.png" class="collage col1" id="joint"/>
+        <img src="Bilder/Seite6/Rechts/Marihuana.png" class="collage col1" id="marihuanaSchrift"/>
+        <img src="Bilder/Seite6/Rechts/Konsum.png" class="collage col1" id="konsumSchrift"/>
+    </div>
+
+    <div class="Pflanze">
+        <img src="Bilder/monstergans.png" class="Stamm"/>
+
+
+        <img src="Bilder/seite1b/blatt.png" class="intro" id="blatt1"/>
+        <div class="onclick" id="onclick1"></div>
+
+        <img src="Bilder/pflanz/blatt-s2.png" class="Blatt" id="blatt2"/>
+        <div class="onclick" id="onclick2"></div>
+
+
+        <img src="Bilder/pflanz/blatt-s3.png" class="Blatt" id="blatt3"/>
+        <div class="onclick" id="onclick3"></div>
+
+        <img src="Bilder/pflanz/blatt-s4.png" class="Blatt" id="blatt4"/>
+        <div class="onclick" id="onclick4"></div>
+
+        <img src="Bilder/pflanz/blatt-s5.png" class="Blatt" id="blatt5"/>
+        <div class="onclick" id="onclick5"></div>
+    </div>
+    <div class="colRahmen colRahmen2 ">
+        <img src="Bilder/pflanz/hintergrund61.png" class="hintergrundBild unsichtbar"/>
+        <div class="infotextb hierKlickenText" id="hierKlickenClickb">Am besten du nutzt einen Laptop (16:9) und eine Maus, wenn du unsere Seite wirklich genießen möchtest.
+        Wenn du unbedingt am Handy bleiben möchtest, halte es am besten quer!
+        Viel Spaß beim erkunden neuer, beziehungsweise alter Möglichkeiten :)</div>
+        <div class="infotext hierKlickenText" id="hierKlickenClick">Am besten du nutzt einen Laptop (16:9) und eine Maus, wenn du unsere Seite wirklich genießen möchtest.
+            Wenn du unbedingt am Handy bleiben möchtest, halte es am besten quer!
+            Viel Spaß beim erkunden neuer, beziehungsweise alter Möglichkeiten :)</div>
+
+        <div class="infotextb antikeText" id="antikeb">Die Samen des Hanfes,
+            die kleinen Hanfnüsschen, gehörten bei vielen
+            antiken Zivilisationen
+            zu den wichtigsten Grundnahrungsmitteln.<br>
+            Wissenschaftler fanden heraus, dass Hanf in China, Indien,
+            Babylon, Persien, Ägypten und den Kulturen in Nord- und
+            Südamerika angebaut und genutzt wurde.
+            Die Hanfnüsschen können pur gegessen, zu einem äusserst
+            proteinreichen Mehl vermahlen, oder zu Öl und Butter verarbeitet werden.
+        </div>
+        <div class="infotext antikeText" id="antike">Die Samen des Hanfes,
+            die kleinen Hanfnüsschen, gehörten bei vielen
+            antiken Zivilisationen
+            zu den wichtigsten Grundnahrungsmitteln.<br>
+            Wissenschaftler fanden heraus, dass Hanf in China, Indien,
+            Babylon, Persien, Ägypten und den Kulturen in Nord- und
+            Südamerika angebaut und genutzt wurde.
+            Die Hanfnüsschen können pur gegessen, zu einem äusserst
+            proteinreichen Mehl vermahlen, oder zu Öl und Butter verarbeitet werden.
+        </div>
+
+        <div class="infotextb muskelaufbauText" id="muskelaufbaub">Unter den im Hanfprotein vorliegenden Aminosäuren befinden sich auch
+            reichliche Mengen
+            der beiden schwefelhaltigen Aminosäuren Methionin und Cystein.<br> Sie sind u. a.
+            an der Entgiftung der Zellen und der Produktion von vitalen Enzymen beteiligt.
+        </div>
+        <div class="infotext muskelaufbauText" id="muskelaufbau">Unter den im Hanfprotein vorliegenden Aminosäuren befinden sich auch
+            reichliche Mengen
+            der beiden schwefelhaltigen Aminosäuren Methionin und Cystein.<br> Sie sind u. a.
+            an der Entgiftung der Zellen und der Produktion von vitalen Enzymen beteiligt.
+        </div>
+        <div class="infotextb kuecheText" id="kuecheb">
+            Bereits 20 Gramm eines hochwertigen Hanföles genügen, um den Tagesbedarf der wichtigsten essentiellen
+            Fettsäuren zu decken. Am besten gibt man das Öl über die fertig
+            gegarten Speisen. In der Rohkostküche passt das aromatische Öl wunderbar in
+            Salatdressings, zu Marinaden, Dips oder auch in Smoothies.
+        </div>
+        <div class="infotext kuecheText" id="kueche">
+            Bereits 20 Gramm eines hochwertigen Hanföles genügen, um den Tagesbedarf der wichtigsten essentiellen
+            Fettsäuren zu decken. Am besten gibt man das Öl über die fertig
+            gegarten Speisen. In der Rohkostküche passt das aromatische Öl wunderbar in
+            Salatdressings, zu Marinaden, Dips oder auch in Smoothies.
+        </div>
+        <div class="infotextb proteinquelleText" id="proteinquelleb">
+            Die Hanfsamen bestehen zu 20 bis 24 Prozent aus reinem hochwertigen Protein in Form aller essentieller
+            Aminosäuren, die der Mensch benötigt, um daraus körpereigenes Eiweiss aufzubauen.
+            Die Hanfnüsschen können pur gegessen, zu einem äusserst proteinreichen Mehl vermahlen oder zu Öl und Butter
+            verarbeitet werden.
+            Hanfnüsschen enthalten reichhaltige Mengen an Antioxidantien sowie Vitamin E und die B-Vitamine. Besonders
+            für Vitamin B2 (Riboflavin) ist Hanf eine hervorragende Quelle, da es reichhaltiger an B2 ist als tierische
+            Produkte.
+
+        </div>
+        <div class="infotext proteinquelleText" id="proteinquelle">
+            Die Hanfsamen bestehen zu 20 bis 24 Prozent aus reinem hochwertigen Protein in Form aller essentieller
+            Aminosäuren, die der Mensch benötigt, um daraus körpereigenes Eiweiss aufzubauen.
+            Die Hanfnüsschen können pur gegessen, zu einem äusserst proteinreichen Mehl vermahlen oder zu Öl und Butter
+            verarbeitet werden.
+            Hanfnüsschen enthalten reichhaltige Mengen an Antioxidantien sowie Vitamin E und die B-Vitamine. Besonders
+            für Vitamin B2 (Riboflavin) ist Hanf eine hervorragende Quelle, da es reichhaltiger an B2 ist als tierische
+            Produkte.
+
+        </div>
+        <div class="infotextb gutenbergBibelText" id="gutenbergBibelb">
+            Die Herstellung von Papier aus Hanf hat eine lange Geschichte und findet ihren Anfang ca. 140 v. Chr. in
+            China und kam schließlich auch nach Europa.
+            Sogar die Gutenberg-Bibel wurde auf Hanfpapier geschrieben, sonst wäre sie mittlerweile längst zerfallen.
+            Früher war Papier aus Hanf eine Selbstverständlichkeit. Heute ist es eher selten.
+        </div>
+        <div class="infotext gutenbergBibelText" id="gutenbergBibel">
+            Die Herstellung von Papier aus Hanf hat eine lange Geschichte und findet ihren Anfang ca. 140 v. Chr. in
+            China und kam schließlich auch nach Europa.
+            Sogar die Gutenberg-Bibel wurde auf Hanfpapier geschrieben, sonst wäre sie mittlerweile längst zerfallen.
+            Früher war Papier aus Hanf eine Selbstverständlichkeit. Heute ist es eher selten.
+        </div>
+        <div class="infotextb umweltText" id="umweltb">
+            Papier aus Hanf wäre eine sehr viel umweltfreundlichere und auch qualitativere Alternative für Papier aus
+            Holz. Hanfpapier ist sehr viel Reiß-, Zug-, und Nassfester
+            und kann deshalb auch viel leichter und öfter recycelt werden.
+        </div>
+        <div class="infotext umweltText" id="umwelt">
+            Papier aus Hanf wäre eine sehr viel umweltfreundlichere und auch qualitativere Alternative für Papier aus
+            Holz. Hanfpapier ist sehr viel Reiß-, Zug-, und Nassfester
+            und kann deshalb auch viel leichter und öfter recycelt werden.
+        </div>
+        <div class="infotextb holzVglText" id="holzb">
+            Hanfpapier wird aus den Fasern der Pflanze gewonnen, hierbei können alle Teile der Pflanze verwertet werden.
+            Bei Holz, sprich Bäumen, wird zur Papierherstellung nur Zellstoff genutzt. Diesen muss man aufwändig mit
+            vielen Chemikalien weiterverarbeiten,
+            damit schönes, beschreibbares Papier entsteht. Hierfür werden Unmengen an Bäumen gefällt.
+        </div>
+        <div class="infotext holzVglText" id="holz">
+            Hanfpapier wird aus den Fasern der Pflanze gewonnen, hierbei können alle Teile der Pflanze verwertet werden.
+            Bei Holz, sprich Bäumen, wird zur Papierherstellung nur Zellstoff genutzt. Diesen muss man aufwändig mit
+            vielen Chemikalien weiterverarbeiten,
+            damit schönes, beschreibbares Papier entsteht. Hierfür werden Unmengen an Bäumen gefällt.
+        </div>
+
+        <div class="infotextb hanfautoText" id="autob">
+            Eine der erwähnenswertesten Anwendungsbereiche von Hanfplastik war Henry Fords Hanf-Automobil aus dem Jahr 1941.
+            Er hat nicht nur ein komplettes Fahrzeug aus Hanf und anderen organischen Materialien gebaut, die Fahrzeuge waren auch imstande zehnmal stärkeren Stößen standzuhalten als herkömmliche Stahlautos und es konnte mit einem Biokraftstoff auf Hanfbasis betrieben werden. Außerdem waren sie auch mehr als 450kg leichter.
+            Obwohl Pläne für einen zweiten Prototyp gescheitert sind, treten heute große Automobilhersteller wie Mercedes, Chrysler, BMW, Volkswagen, Audi und auch Ford in die Fußstapfen Henrys und integrieren Hanfplastik in ihre neuen Fahrzeugmodelle.
+        </div>
+        <div class="infotext hanfautoText" id="auto">
+            Eine der erwähnenswertesten Anwendungsbereiche von Hanfplastik war Henry Fords Hanf-Automobil aus dem Jahr 1941.
+            Er hat nicht nur ein komplettes Fahrzeug aus Hanf und anderen organischen Materialien gebaut, die Fahrzeuge waren auch imstande zehnmal stärkeren Stößen standzuhalten als herkömmliche Stahlautos und es konnte mit einem Biokraftstoff auf Hanfbasis betrieben werden. Außerdem waren sie auch mehr als 450kg leichter.
+            Obwohl Pläne für einen zweiten Prototyp gescheitert sind, treten heute große Automobilhersteller wie Mercedes, Chrysler, BMW, Volkswagen, Audi und auch Ford in die Fußstapfen Henrys und integrieren Hanfplastik in ihre neuen Fahrzeugmodelle.
+        </div>
+
+        <div class="infotextb plastikText" id="plastikb">
+            Hanfplastik ist biologisch abbaubar - und sehr erschwinglich - anders als herkömmliches, auf Öl basierendes Plastik. Seit fast zwei Jahrzehnten wird Hanfplastik hergestellt und in Europa und China verwendet. Allerdings wird es im Rest der Welt schon viel länger hergestellt.
+            Vor dem Marihuana-Steuergesetz von 1937 war Hanfplastik eine wachsende Industrie und selbst nachdem es verboten war, wurden Hanfplastikprodukte bis Mitte der 1940er-Jahre hergestellt.
+            <br>
+            Im Vergleich zu anderen Biokunststoffen ist Hanf momentan noch ein Nischenprodukt. Im Bereich der Verpackungen sind vor allem Salatschalen, Einweg-Becher und Einweg-Geschirr aus Hanf denkbar.
+        </div>
+        <div class="infotext plastikText" id="plastik">
+            Hanfplastik ist biologisch abbaubar - und sehr erschwinglich - anders als herkömmliches, auf Öl basierendes Plastik. Seit fast zwei Jahrzehnten wird Hanfplastik hergestellt und in Europa und China verwendet. Allerdings wird es im Rest der Welt schon viel länger hergestellt.
+            Vor dem Marihuana-Steuergesetz von 1937 war Hanfplastik eine wachsende Industrie und selbst nachdem es verboten war, wurden Hanfplastikprodukte bis Mitte der 1940er-Jahre hergestellt.
+            <br>
+            Im Vergleich zu anderen Biokunststoffen ist Hanf momentan noch ein Nischenprodukt. Im Bereich der Verpackungen sind vor allem Salatschalen, Einweg-Becher und Einweg-Geschirr aus Hanf denkbar.
+        </div>
+
+        <div class="infotextb daemmungText" id="daemmungb">
+            Eine Handelsbezeichnung für den Naturdämmstoff Hanf ist unter anderem Thermo-Hanf.
+            Hanf weist hinsichtlich Wärmedämmung und Schallisolierung gute Eigenschaften auf. Durch den hohen Gehalt an eingelagerter Kieselsäure sind Hanffasern feuchtigkeitsbeständig und fäulnisrestistent. Die Dämmmatten sind sehr flexibel, wodurch sie besonders gut für die Zwischensparrendämmung geeignet sind.
+        </div>
+        <div class="infotext daemmungText" id="daemmung">
+            Eine Handelsbezeichnung für den Naturdämmstoff Hanf ist unter anderem Thermo-Hanf.
+            Hanf weist hinsichtlich Wärmedämmung und Schallisolierung gute Eigenschaften auf. Durch den hohen Gehalt an eingelagerter Kieselsäure sind Hanffasern feuchtigkeitsbeständig und fäulnisrestistent. Die Dämmmatten sind sehr flexibel, wodurch sie besonders gut für die Zwischensparrendämmung geeignet sind.
+        </div>
+
+        <div class="infotextb medizinText" id="apothekenpflichtb">
+            Seit März 2017 ist Cannabis als Medizin in Deutschland zugelassen.
+            Ärzte können schwerkranken Patienten Cannabisblüten oder Cannabisextrakt in pharmazeutischer Qualität verschreiben.
+        </div>
+        <div class="infotext medizinText" id="apothekenpflicht">
+            Seit März 2017 ist Cannabis als Medizin in Deutschland zugelassen.
+            Ärzte können schwerkranken Patienten Cannabisblüten oder Cannabisextrakt in pharmazeutischer Qualität verschreiben.
+        </div>
+
+        <div class="infotextb anwendungText" id="anwendungb">
+            Cannabis wird heute in manchen Fällen als Entzündungshemmer, zur Schmerzlinderung und als nervenschützende Substanz verabreicht. Bekannt ist inzwischen der Einsatz bei Erkrankungen wie beispielsweise Multiple Sklerose, Grünem Star, dem Tourette-Syndrom, Rheuma, chronischen Darmerkrankungen und Depressionen.
+        </div>
+        <div class="infotext anwendungText" id="anwendung">
+            Cannabis wird heute in manchen Fällen als Entzündungshemmer, zur Schmerzlinderung und als nervenschützende Substanz verabreicht. Bekannt ist inzwischen der Einsatz bei Erkrankungen wie beispielsweise Multiple Sklerose, Grünem Star, dem Tourette-Syndrom, Rheuma, chronischen Darmerkrankungen und Depressionen.
+        </div>
+
+        <div class="infotextb forschungText" id="forschungb">
+            Bei zahlreichen weiteren Krankheiten wird vermutet, dass Cannabis-Produkte eine positive Wirkung zeigen könnte. Doch noch steckt die medizinische Forschung in dieser Hinsicht in den Kinderschuhen – bislang liegen nur wenige klinische Studien vor. Entsprechend langsam geht die Legalisierung der Cannabis-Produkte für die medizinische Anwendung voran.
+        </div>
+        <div class="infotext forschungText" id="forschung">
+            Bei zahlreichen weiteren Krankheiten wird vermutet, dass Cannabis-Produkte eine positive Wirkung zeigen könnte. Doch noch steckt die medizinische Forschung in dieser Hinsicht in den Kinderschuhen – bislang liegen nur wenige klinische Studien vor. Entsprechend langsam geht die Legalisierung der Cannabis-Produkte für die medizinische Anwendung voran.
+        </div>
+
+        <div class="infotextb haschischText" id="haschischb">
+            Ursprünglich kommt das Wort "Haschisch" aus dem Arabischen und bedeutet "Kraut". Auch Haschisch kann geraucht oder gegessen werden. Mit Haschisch bezeichnet man das durch Drüsen der weiblichen Hanfpflanzen abgesonderte, klebrige Cannabisharz.
+        </div>
+        <div class="infotext haschischText" id="haschisch">
+            Ursprünglich kommt das Wort "Haschisch" aus dem Arabischen und bedeutet "Kraut". Auch Haschisch kann geraucht oder gegessen werden. Mit Haschisch bezeichnet man das durch Drüsen der weiblichen Hanfpflanzen abgesonderte, klebrige Cannabisharz.
+        </div>
+
+        <div class="infotextb marihuanaText" id="marihuanab">
+            Die Bezeichnung Marihuana stammt vom mexikanischen Wort "maraguanquo" ab, zu Deutsch: "berauschende Pflanze". Mit Marihuana werden die getrockneten und zerkleinerten Blüten der weiblichen Hanfpflanze bezeichnet, die wesentlich THC-haltiger sind als männliche Blüten.
+        </div>
+        <div class="infotext marihuanaText" id="marihuana">
+            Die Bezeichnung Marihuana stammt vom mexikanischen Wort "maraguanquo" ab, zu Deutsch: "berauschende Pflanze". Mit Marihuana werden die getrockneten und zerkleinerten Blüten der weiblichen Hanfpflanze bezeichnet, die wesentlich THC-haltiger sind als männliche Blüten.
+        </div>
+
+        <div class="infotextb konsumText" id="konsumb">
+            <p>Die Rauschzustände, die beim Konsum von Cannabis auftreten können, sind unterschiedlich. Das durch Cannabis verursachte "High"-Gefühl reicht von Euphorie bis zur Niedergeschlagenheit, von Lust, Entspannung, Beruhigung bis zu Gereiztheit, Unruhe und Depression. Der Rausch bringt eine veränderte Wahrnehmung von Raum und Zeit mit sich, zu körperlicher Abhängigkeit führt das Rauschmittel Cannabis nicht. Gleichwohl kann starker Cannabis-Konsum zur psychischen Abhängigkeit führen.</p>
+            Cannabis wird meist in Form von Marihuana oder Haschisch selten als Haschischöl konsumiert.
+            Die häufigste Konsumform ist das Rauchen von Joints (umgangssprachlich „kiffen“). Dabei wird das zerbröselte Haschisch oder Marihuana meist mit Tabak vermengt und zu einer Zigarette gedreht. Darüber hinaus werden Cannabisprodukte über verschiedene Sorten von Pfeifen geraucht, die mitunter eine deutliche Intensivierung des Rauscherlebnisses zur Folge haben. Gelegentlich werden Cannabisprodukte in Tee aufgelöst getrunken oder in Keksen verbacken und gegessen.
+        </div>
+        <div class="infotext konsumText" id="konsum">
+            <p>Die Rauschzustände, die beim Konsum von Cannabis auftreten können, sind unterschiedlich. Das durch Cannabis verursachte "High"-Gefühl reicht von Euphorie bis zur Niedergeschlagenheit, von Lust, Entspannung, Beruhigung bis zu Gereiztheit, Unruhe und Depression. Der Rausch bringt eine veränderte Wahrnehmung von Raum und Zeit mit sich, zu körperlicher Abhängigkeit führt das Rauschmittel Cannabis nicht. Gleichwohl kann starker Cannabis-Konsum zur psychischen Abhängigkeit führen.</p>Cannabis wird meist in Form von Marihuana oder Haschisch selten als Haschischöl konsumiert.
+            Die häufigste Konsumform ist das Rauchen von Joints (umgangssprachlich „kiffen“). Dabei wird das zerbröselte Haschisch oder Marihuana meist mit Tabak vermengt und zu einer Zigarette gedreht. Darüber hinaus werden Cannabisprodukte über verschiedene Sorten von Pfeifen geraucht, die mitunter eine deutliche Intensivierung des Rauscherlebnisses zur Folge haben. Gelegentlich werden Cannabisprodukte in Tee aufgelöst getrunken oder in Keksen verbacken und gegessen.
+        </div>
+        <div class="textButton" id="hierClick"></div>
+        <a href="Uns.html" target="_blank"><div class="textButton" id="unsClick"></div></a>
+        <a href="https://www.th-deg.de/de/impressum" target="_blank"><div class="textButton" id="impressumClick"></div></a>
+        <a href="https://www.th-deg.de/de/datenschutz" target="_blank"><div class="textButton" id="datenschutzClick"></div></a>
+
+
+        <div class="textButton seite1" id="antikeClick"></div>
+        <div class="textButton seite1" id="muskelaufbauClick"></div>
+        <div class="textButton seite1" id="kuecheClick"></div>
+        <div class="textButton seite1" id="proteinquelleClick"></div>
+
+        <div class="textButton seite2" id="gutenberbibelClick"></div>
+        <div class="textButton seite2" id="holzClick"></div>
+        <div class="textButton seite2" id="umweltClick"></div>
+
+        <div class="textButton seite3" id="autoClick"></div>
+        <div class="textButton seite3" id="daemmungClick"></div>
+        <div class="textButton seite3" id="plastikClick"></div>
+
+        <div class="textButton seite4" id="apothekenpflichtClick"></div>
+        <div class="textButton seite4" id="anwendungClick"></div>
+        <div class="textButton seite4" id="forschungClick"></div>
+
+        <div class="textButton seite5" id="konsumClick"></div>
+        <div class="textButton seite5" id="marihuanaClick"></div>
+        <div class="textButton seite5" id="haschischClick"></div>
+
+    </div>
+
+</div>
+
+<!--<div class="collagenrahmen">
+    <img src="Bilder/extrakt grün 2.png" class="collage unsichtbar"/>
+</div>-->
+
+<!--<img src="Bilder/SoundOff.png" class="AudioIcon Off"/>
+<img src="Bilder/SoundOn.png" class="AudioIcon On"/>-->
+
+
+</div>
+<div style="height:10vh;"></div>
+
+<div id="trigger01"></div>
+<div style="height:180vh;"></div>
+<div id="trigger06"></div>
+<div style="height:100vh;"></div>
+
+<div id="trigger02"></div>
+<div style="height:180vh;"></div>
+<div id="trigger07"></div>
+<div style="height:100vh;"></div>
+
+<div id="trigger03"></div>
+<div style="height:180vh;"></div>
+<div id="trigger08"></div>
+<div style="height:100vh;"></div>
+
+<div id="trigger04"></div>
+<div style="height:180vh;"></div>
+<div id="trigger09"></div>
+<div style="height:100vh;"></div>
+
+<div id="trigger05"></div>
+<div style="height:180vh;"></div>
+<div id="trigger10"></div>
+<div style="height:100vh;"></div>
+<div style="height:100vh;"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+
+    /* preloader */
+
+    var overlay = document.getElementById("overlay");
+
+    window.addEventListener('load', function () {
+        overlay.style.display = 'none';
+    })
+
+</script>
+<script src="Weedo.js"></script>
+<link src="responsive.css" rel="stylesheet" type="text/css">
+</body>
+</html>
